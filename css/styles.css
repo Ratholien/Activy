@@ -20,15 +20,26 @@ body {
 }
 
 header {
-    margin-top: 37pt;
+    height: 8%;
 }
 
-.header-text {
+
+.text__header {
+    vertical-align: middle;
+    line-height: 5vh;
     margin: 0 auto;
     text-align: center;
+    height: 100%;
     color: rgba(243, 92, 102, 1);
     font-size: 24pt;
+    border-bottom: solid black;
 }
+
+.text__header span {
+    font-size: 5vh;
+    height:100%;
+}
+
 .content{
     margin:0 30pt;
 }
@@ -85,4 +96,16 @@ button {
 button:hover {
     color: white;
     background-color: rgba(243, 92, 102, 1);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper__body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
 }
