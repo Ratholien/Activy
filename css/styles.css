@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+hr {
+    margin-top: 9pt;
+    color: rgba(151, 151, 151, 1);
+    border-color: rgba(151, 151, 151, 1);
+    height: 0.5pt;
+    border: 0;
+    border-top: 1px solid;
+}
+
+body {
+    min-width: 375pt;
+    height: 1010pt;
+    width: 100%;
+}
+
+header {
+    margin-top: 37pt;
+}
+
+.header-text {
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(243, 92, 102, 1);
+    font-size: 24pt;
+}
+.content{
+    margin:0 30pt;
+}
+.content * {
+    font-size: 14pt;
+}
+
+.content div {
+    margin: 0 auto;
+}
+
+.content .feeling {
+    margin-top: 57.5px;
+    align-content: center;
+}
+
+.feeling .question{
+    display: inline;
+}
+
+.feeling .imgmood{
+    display: inline;
+    width:50pt;
+    height: 50pt;
+    background-image: url("../res/img/001-laughing.svg");
+    background-repeat: no-repeat;
+}
+
+
+.content .where {
+    margin-top: 45px;
+}
+.content .where button{
+    margin-top: 20pt;
+}
+.content .where button+button{
+    margin-left: 20pt;
+}
+
+.content .when {
+    margin-top: 30px;
+}
+
+button {
+    width: 147pt;
+    height: 47pt;
+    color: rgba(93, 72, 75, 1);
+    background-color: rgba(214, 208, 210, 1);
+    border: 0;
+    border-radius: 8pt;
+
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(243, 92, 102, 1);
+}
