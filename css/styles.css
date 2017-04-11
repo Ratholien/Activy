@@ -22,7 +22,11 @@ body {
 header {
     height: 8%;
 }
-
+.wrapper__body{
+    margin: 0 auto;
+    min-width: 350px;
+    max-width: 480px;
+}
 
 .text__header {
     vertical-align: middle;
@@ -34,15 +38,15 @@ header {
     font-size: 24pt;
     border-bottom: solid black;
 }
-
 .text__header span {
     font-size: 5vh;
     height:100%;
 }
 
-.content{
-    margin:0 30pt;
+.content {
+    margin: 0 30pt;
 }
+
 .content * {
     font-size: 14pt;
 }
@@ -56,31 +60,36 @@ header {
     align-content: center;
 }
 
-.feeling .question{
+.feeling .question {
     display: inline;
 }
-
 .feeling .imgmood{
     display: inline;
-    width:50pt;
+    width: 50pt;
     height: 50pt;
-    background-image: url("../res/img/001-laughing.svg");
+}
+.feeling .imgmood img{
+    width: 50pt;
+    height: 50pt;
+    background-image: url("../res/img/happy.png");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
-
-.content .where {
+.content .where,.when {
     margin-top: 45px;
 }
-.content .where button{
+
+.content .where,.when button {
     margin-top: 20pt;
-}
-.content .where button+button{
-    margin-left: 20pt;
 }
 
 .content .when {
     margin-top: 30px;
+}
+
+.quality button {
+    color: rgba(243, 92, 102, 1);
 }
 
 button {
@@ -90,12 +99,108 @@ button {
     background-color: rgba(214, 208, 210, 1);
     border: 0;
     border-radius: 8pt;
-
 }
 
 button:hover {
     color: white;
     background-color: rgba(243, 92, 102, 1);
+}
+
+/*RANGE INPUT PERSONALIZATION*/
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgba(214, 208, 210, 1);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0 3px 5px #888;
+    border: 0 solid #000000;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: rgba(243, 92, 102, 1);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(214, 208, 210, 1);
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+    background: rgba(214, 208, 210, 1);
+    border-radius: 25px;
+    border: 0 solid #000101;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+    border: 0 solid #000000;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: rgba(243, 92, 102, 1);
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+
+    background: transparent;
+    border-color: transparent;
+    border-width: 39px 0;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: rgba(214, 208, 210, 1);
+    border: 0 solid #000101;
+    border-radius: 50px;
+    box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: rgba(214, 208, 210, 1);
+    border: 0 solid #000101;
+    border-radius: 50px;
+    box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+    border: 0 solid #000000;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: rgba(243, 92, 102, 1);
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: rgba(214, 208, 210, 1);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: rgba(214, 208, 210, 1);
 }
 
 body {
