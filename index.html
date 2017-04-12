@@ -22,43 +22,44 @@
 
             </div>
 
-            <input type="range" title="rangeBar" id="range_Value" name="points" min="0" max="100"
+            <input type="range" title="rangeBar" id="range_Value" name="feelings" min="0" max="5"
                    onchange="rangevalue.value=value"/>
-            <output id="rangevalue"></output>
         </div>
 
         <!--Scrollbar-->
         <div class="where">
             <p>Where?</p>
             <button>Inside</button>
-            <button>Outside</button>
+            <button style="margin-left: 17pt">Outside</button>
         </div>
         <div class="when">
             <p>When?</p>
             <button>Morning</button>
-            <button>Afternoon</button>
+            <button style="margin-left: 17pt">Afternoon</button>
             <button class="btnbelow">Evening</button>
-            <button class="btnbelow">Night</button>
+            <button class="btnbelow" style="margin-left: 17pt">Night</button>
         </div>
         <div class="spend">
             <div class="lilheader">How much do you want to spend?</div>
+            <output id="rangevalue2"></output><span> $</span>
+
             <input type="range" title="rangeBar"  name="points" min="0" max="100"
                    onchange="rangevalue2.value=value"/>
-            <output id="rangevalue2"></output>
             <!--Scrollbar-->
         </div>
         <div class="howfar ">
             <div>How far do you want to travel?</div>
+            <output id="rangevalue3"></output><span> Km.</span>
             <input type="range" title="rangeBar" name="points" min="0" max="100"
                    onchange="rangevalue3.value=value"/>
-            <output id="rangevalue3"></output>
+
             <!--Scrollbar-->
         </div>
         <div class="quality">
             <button>★★★★★</button>
-            <button>★★★★</button>
+            <button style="margin-left: 17pt"> ★★★★</button>
             <button>★★★</button>
-            <button>★★</button>
+            <button style="margin-left: 17pt">★★</button>
             <button>★</button>
         </div>
     </div>

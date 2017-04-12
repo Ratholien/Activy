@@ -24,19 +24,18 @@ header {
 }
 .wrapper__body{
     margin: 0 auto;
-    min-width: 350px;
-    max-width: 480px;
+    height: 100vh;
+    max-width: 500px;
+    min-width: 500px;
+    margin: 0 auto;
 }
 
 .text__header {
-    vertical-align: middle;
-    line-height: 5vh;
-    margin: 0 auto;
     text-align: center;
     height: 100%;
     color: rgba(243, 92, 102, 1);
-    font-size: 24pt;
-    border-bottom: solid black;
+    border-bottom: solid 0.5pt lightgrey;
+    margin-top: 20pt;
 }
 .text__header span {
     font-size: 5vh;
@@ -53,6 +52,12 @@ header {
 
 .content div {
     margin: 0 auto;
+}
+
+output, output+span{
+    display: inline;
+    font-size: 14pt;
+    color: lightgrey;
 }
 
 .content .feeling {
@@ -87,10 +92,12 @@ header {
     margin-top: 30px;
 }
 .when .btnbelow{
-    margin-top:5px !important;
+    margin-top:24px !important;
 }
 .quality button {
     color: rgba(243, 92, 102, 1);
+    font-size:30pt;
+    margin-bottom: 10pt;
 }
 .spend,.howfar,.quality{
     margin-top: 20pt!important;
@@ -108,6 +115,34 @@ button:hover {
     color: white;
     background-color: rgba(243, 92, 102, 1);
 }
+
+footer{
+    height: 50pt;
+    background-color: rgba(243, 92, 102, 1);
+    margin-top: 20pt;
+    cursor: pointer;
+}
+footer .okbutton{
+    width: 50pt;
+    vertical-align: middle;
+    font-size: 25pt;
+    display: inline-block;
+    margin-top: 8pt;
+    margin-left: 150pt;
+    color: white;
+    
+}
+
+footer .arrow{
+    width: 40pt;
+    display: inline-block;
+    font-size: 35pt;
+    vertical-align: middle;
+    margin-top: 8pt;
+    color: white;
+    
+}
+
 
 /*RANGE INPUT PERSONALIZATION*/
 input[type=range] {
@@ -211,9 +246,3 @@ body {
     height: 100%;
 }
 
-.wrapper__body {
-    width: 100vw;
-    height: 100vh;
-    max-width: 1000px;
-    margin: 0 auto;
-}
